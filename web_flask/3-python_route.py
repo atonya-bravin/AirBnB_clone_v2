@@ -21,6 +21,13 @@ def c_is_fun(text):
     """ Prints a Message when /c is called """
     return "C " + text.replace('_', ' ')
 
+@app.route('/python', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
+def python_is_cool(text='is_cool'):
+    """ Prints a Message when /python is called """
+    """ If no text is supplied, 'is cool' is used as the default """
+    return "Python " + text.replace('_', ' ')
+
 
 if __name__ == "__main__":
     """ Main Function """
