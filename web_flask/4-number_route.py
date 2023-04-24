@@ -29,6 +29,7 @@ def python_is_cool(text='is_cool'):
     """ If no text is supplied, 'is cool' is used as the default """
     return "Python " + text.replace('_', ' ')
 
+
 @app.route('/number/<int:n>', strict_slashes=False)
 def is_n_number(n):
     """ Prints a Message when /number is called only if n is an int"""
