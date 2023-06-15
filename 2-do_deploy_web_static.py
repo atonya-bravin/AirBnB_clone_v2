@@ -8,7 +8,7 @@ that distributes an archive to your web servers, using the function do_deploy
 from os.path import exists
 from fabric.api import put, run, env
 
-env.hosts = ['100.25.160.128', '35.175.104.141']
+env.hosts = ['52.91.149.35', '34.232.67.76']
 
 
 def do_deploy(archive_path):
